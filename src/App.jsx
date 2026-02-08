@@ -655,6 +655,70 @@ const App = () => {
 
 
       {/* ============================================
+          LEADERSHIP
+          ============================================ */}
+      <section id="leadership" className="relative z-20 py-28 md:py-36 overflow-hidden gradient-section">
+        <div className="absolute inset-0 grid-bg opacity-10" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
+
+          <div className="text-center mb-16">
+            <div className="animate-up">
+              <span className="glass-badge mb-6 inline-block">Leadership</span>
+            </div>
+            <h2 className="animate-up text-display-md md:text-display-lg text-[#0F172A]">
+              Executive <span className="text-gradient-blue">Team</span>
+            </h2>
+          </div>
+
+          <div className="animate-up max-w-5xl mx-auto">
+            <SpotlightCard className="glass-card rounded-2xl overflow-hidden">
+              <div className="relative z-10 grid md:grid-cols-[320px_1fr] lg:grid-cols-[380px_1fr] items-stretch">
+                {/* CEO Photo */}
+                <div className="relative overflow-hidden">
+                  <img
+                    src={`${BASE}assets/ceo-robert-white.jpeg`}
+                    alt="S. Robert White, Jr."
+                    className="w-full h-full object-cover object-center min-h-[360px] md:min-h-full"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:via-transparent md:to-white/10" />
+                </div>
+
+                {/* CEO Info */}
+                <div className="p-8 md:p-10 lg:p-12 flex flex-col justify-center">
+                  <div className="mb-1">
+                    <span className="text-label text-blue-500 uppercase tracking-widest">President & CEO</span>
+                  </div>
+                  <h3 className="text-heading-lg md:text-display-md text-[#0F172A] mb-1">
+                    S. Robert White, Jr.
+                  </h3>
+                  <div className="w-16 h-1 oknbs-gradient rounded-full mb-6" />
+                  <p className="text-body text-[#64748B] leading-relaxed mb-4">
+                    Mr. White brings over 10 years of experience in the financial services industry
+                    prior to becoming a Government contractor executive. He served three years on the
+                    Board of Managers for his Tribe's first federal contracting venture.
+                  </p>
+                  <p className="text-body text-[#64748B] leading-relaxed mb-6">
+                    In 2008, Mr. White relocated from Oklahoma to Houston, TX to lead his Tribe's
+                    second Tribally Owned federal contracting firm as President & CEO. After a decade
+                    of proven leadership, he departed in 2018 to incorporate Native Business Solutions,
+                    LLC as its CEO and Founder.
+                  </p>
+                  <div className="flex flex-wrap gap-3">
+                    {['SBA 8(a) Leadership', 'Federal Contracting', 'Tribal Governance'].map((tag) => (
+                      <span key={tag} className="glass-badge text-xs">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </SpotlightCard>
+          </div>
+
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* ============================================
           SECTION 3: SERVICES
           ============================================ */}
       <section
